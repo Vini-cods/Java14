@@ -80,18 +80,28 @@ public class Main {
 //                }
 
         // Atividade 5: Calculadora Simples
-                Scanner scanner = new Scanner(System.in);
+//                Scanner scanner = new Scanner(System.in);
+//
+//                System.out.print("Digite o primeiro número: ");
+//                double numero1 = Double.parseDouble(scanner.nextLine());
+//
+//                System.out.print("Digite o segundo número: ");
+//                double numero2 = Double.parseDouble(scanner.nextLine());
+//
+//                System.out.println("Soma: " + (numero1 + numero2));
+//                System.out.println("Subtração: " + (numero1 - numero2));
+//                System.out.println("Multiplicação: " + (numero1 * numero2));
+//                System.out.println("Divisão: " + (numero1 / numero2));
 
-                System.out.print("Digite o primeiro número: ");
-                double numero1 = Double.parseDouble(scanner.nextLine());
-
-                System.out.print("Digite o segundo número: ");
-                double numero2 = Double.parseDouble(scanner.nextLine());
-
-                System.out.println("Soma: " + (numero1 + numero2));
-                System.out.println("Subtração: " + (numero1 - numero2));
-                System.out.println("Multiplicação: " + (numero1 * numero2));
-                System.out.println("Divisão: " + (numero1 / numero2));
+        // Atividade 6: Detectando Estouro de Variável
+                byte valorByte = 127;
                 
+                System.out.println("Valor inicial: " + valorByte);
+                valorByte++;
+                System.out.println("Após adicionar 1: " + valorByte);
+                valorByte++;
+                System.out.println("Após adicionar mais 1: " + valorByte);
+
+
     }
 }
