@@ -94,14 +94,24 @@ public class Main {
 //                System.out.println("Divisão: " + (numero1 / numero2));
 
         // Atividade 6: Detectando Estouro de Variável
-                byte valorByte = 127;
+//                byte valorByte = 127;
+//
+//                System.out.println("Valor inicial: " + valorByte);
+//                valorByte++;
+//                System.out.println("Após adicionar 1: " + valorByte);
+//                valorByte++;
+//                System.out.println("Após adicionar mais 1: " + valorByte);
+
+        // Atividade 7: Trabalhando com Valores Flutuantes
+                float valorFloat = 10.5F;
+                double valorDouble = 20.5;
+
+                System.out.println("Valor float: " + valorFloat);
+                System.out.println("Valor double: " + valorDouble);
+
+                // Operação
+                double resultado = valorFloat + valorDouble;
+                System.out.println("Resultado da soma: " + resultado);
                 
-                System.out.println("Valor inicial: " + valorByte);
-                valorByte++;
-                System.out.println("Após adicionar 1: " + valorByte);
-                valorByte++;
-                System.out.println("Após adicionar mais 1: " + valorByte);
-
-
     }
 }
