@@ -13,9 +13,16 @@ public class Main {
 //        int numeroInt = (int) numeroDouble; // Casting explícito
 //        System.out.println(numeroInt); // Saída: 123 (perda da parte decimal)
 
-        String numeroTexto = "42";
-        int numeroInt = Integer.parseInt(numeroTexto);
-        System.out.println(numeroInt); // Saída: 42
+//        String numeroTexto = "42";
+//        int numeroInt = Integer.parseInt(numeroTexto);
+//        System.out.println(numeroInt); // Saída: 42
+
+        //Exemplo de Problema com Estouro:
+//        byte valor = 127;
+//        valor++;
+//        System.out.println(valor); // Saída: -128 (overflow)
+
+        
 
 
     }
