@@ -1,4 +1,5 @@
 package org.example;
+import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -48,12 +49,37 @@ public class Main {
 //                System.out.println("Valor convertido para byte: " + valorByte);
 
         // Atividade 3: Cuidado com a Promoção
-                int num1 = 55555;
-                int num2 = 66666;
+//                int num1 = 55555;
+//                int num2 = 66666;
+//
+//                // Operação que causa estouro
+//                long resultadoCorreto = (long) num1 * num2;
+//                System.out.println("Resultado correto usando long: " + resultadoCorreto);
 
-                // Operação que causa estouro
-                long resultadoCorreto = (long) num1 * num2;
-                System.out.println("Resultado correto usando long: " + resultadoCorreto);
-                
+        // Atividade 4: Parsing de Strings
+                Scanner scanner = new Scanner(System.in);
+
+                System.out.print("Digite um número inteiro: ");
+                String inputInt = scanner.nextLine();
+
+                try {
+                    int numeroInt = Integer.parseInt(inputInt);
+                    System.out.println("Número inteiro convertido: " + numeroInt);
+                } catch (NumberFormatException e) {
+                    System.out.println("Erro ao converter para inteiro: " + e.getMessage());
+                }
+
+                System.out.print("Digite um número decimal: ");
+                String inputDouble = scanner.nextLine();
+
+                try {
+                    double numeroDouble = Double.parseDouble(inputDouble);
+                    System.out.println("Número decimal convertido: " + numeroDouble);
+                } catch (NumberFormatException e) {
+                    System.out.println("Erro ao converter para decimal: " + e.getMessage());
+
+
+        }
+
     }
 }
