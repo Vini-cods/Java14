@@ -9,11 +9,13 @@ public class Main {
 //        double numeroDouble = numeroInt; // Promoção automática
 //        System.out.println(numeroDouble); // Saída: 10.0
 
-        double numeroDouble = 123.456;
-        int numeroInt = (int) numeroDouble; // Casting explícito
-        System.out.println(numeroInt); // Saída: 123 (perda da parte decimal)
+//        double numeroDouble = 123.456;
+//        int numeroInt = (int) numeroDouble; // Casting explícito
+//        System.out.println(numeroInt); // Saída: 123 (perda da parte decimal)
 
-
+        String numeroTexto = "42";
+        int numeroInt = Integer.parseInt(numeroTexto);
+        System.out.println(numeroInt); // Saída: 42
 
 
     }
