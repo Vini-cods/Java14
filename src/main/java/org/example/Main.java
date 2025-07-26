@@ -5,8 +5,10 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
+        int numeroInt = 10;
+        double numeroDouble = numeroInt; // Promoção automática
+        System.out.println(numeroDouble); // Saída: 10.0
 
-        
 
     }
 }
