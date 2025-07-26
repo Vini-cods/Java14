@@ -112,6 +112,6 @@ public class Main {
                 // Operação
                 double resultado = valorFloat + valorDouble;
                 System.out.println("Resultado da soma: " + resultado);
-                
+
     }
 }
