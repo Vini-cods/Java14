@@ -5,9 +5,15 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
-        int numeroInt = 10;
-        double numeroDouble = numeroInt; // Promoção automática
-        System.out.println(numeroDouble); // Saída: 10.0
+//        int numeroInt = 10;
+//        double numeroDouble = numeroInt; // Promoção automática
+//        System.out.println(numeroDouble); // Saída: 10.0
+
+        double numeroDouble = 123.456;
+        int numeroInt = (int) numeroDouble; // Casting explícito
+        System.out.println(numeroInt); // Saída: 123 (perda da parte decimal)
+
+
 
 
     }
