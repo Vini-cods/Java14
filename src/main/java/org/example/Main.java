@@ -57,29 +57,41 @@ public class Main {
 //                System.out.println("Resultado correto usando long: " + resultadoCorreto);
 
         // Atividade 4: Parsing de Strings
+//                Scanner scanner = new Scanner(System.in);
+//
+//                System.out.print("Digite um número inteiro: ");
+//                String inputInt = scanner.nextLine();
+//
+//                try {
+//                    int numeroInt = Integer.parseInt(inputInt);
+//                    System.out.println("Número inteiro convertido: " + numeroInt);
+//                } catch (NumberFormatException e) {
+//                    System.out.println("Erro ao converter para inteiro: " + e.getMessage());
+//                }
+//
+//                System.out.print("Digite um número decimal: ");
+//                String inputDouble = scanner.nextLine();
+//
+//                try {
+//                    double numeroDouble = Double.parseDouble(inputDouble);
+//                    System.out.println("Número decimal convertido: " + numeroDouble);
+//                } catch (NumberFormatException e) {
+//                    System.out.println("Erro ao converter para decimal: " + e.getMessage());
+//                }
+
+        // Atividade 5: Calculadora Simples
                 Scanner scanner = new Scanner(System.in);
 
-                System.out.print("Digite um número inteiro: ");
-                String inputInt = scanner.nextLine();
+                System.out.print("Digite o primeiro número: ");
+                double numero1 = Double.parseDouble(scanner.nextLine());
 
-                try {
-                    int numeroInt = Integer.parseInt(inputInt);
-                    System.out.println("Número inteiro convertido: " + numeroInt);
-                } catch (NumberFormatException e) {
-                    System.out.println("Erro ao converter para inteiro: " + e.getMessage());
-                }
+                System.out.print("Digite o segundo número: ");
+                double numero2 = Double.parseDouble(scanner.nextLine());
 
-                System.out.print("Digite um número decimal: ");
-                String inputDouble = scanner.nextLine();
-
-                try {
-                    double numeroDouble = Double.parseDouble(inputDouble);
-                    System.out.println("Número decimal convertido: " + numeroDouble);
-                } catch (NumberFormatException e) {
-                    System.out.println("Erro ao converter para decimal: " + e.getMessage());
-
-
-        }
-
+                System.out.println("Soma: " + (numero1 + numero2));
+                System.out.println("Subtração: " + (numero1 - numero2));
+                System.out.println("Multiplicação: " + (numero1 * numero2));
+                System.out.println("Divisão: " + (numero1 / numero2));
+                
     }
 }
