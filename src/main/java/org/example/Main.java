@@ -36,16 +36,24 @@ public class Main {
 
 
         // Atividade 2: Conversão de Tipos
-                double valorDouble = 123.456;
-                int valorConvertido = (int) valorDouble;
+//                double valorDouble = 123.456;
+//                int valorConvertido = (int) valorDouble;
+//
+//                System.out.println("Valor original (double): " + valorDouble);
+//                System.out.println("Valor convertido (int): " + valorConvertido);
+//
+//                long valorLong = 150L;
+//                byte valorByte = (byte) valorLong;
+//                System.out.println("Valor long: " + valorLong);
+//                System.out.println("Valor convertido para byte: " + valorByte);
 
-                System.out.println("Valor original (double): " + valorDouble);
-                System.out.println("Valor convertido (int): " + valorConvertido);
+        // Atividade 3: Cuidado com a Promoção
+                int num1 = 55555;
+                int num2 = 66666;
 
-                long valorLong = 150L;
-                byte valorByte = (byte) valorLong;
-                System.out.println("Valor long: " + valorLong);
-                System.out.println("Valor convertido para byte: " + valorByte);
+                // Operação que causa estouro
+                long resultadoCorreto = (long) num1 * num2;
+                System.out.println("Resultado correto usando long: " + resultadoCorreto);
                 
     }
 }
