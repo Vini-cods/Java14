@@ -23,17 +23,29 @@ public class Main {
 //        System.out.println(valor); // Saída: -128 (overflow)
 
         // Atividade 1: Testando a Promoção Automática
-                int valorInt = 10;
-                long valorLong = 20L;
-                double valorDouble = 30.5;
+//                int valorInt = 10;
+//                long valorLong = 20L;
+//                double valorDouble = 30.5;
+//
+//                // Operações com promoção automática
+//                double resultado = valorInt * valorDouble;
+//                System.out.println("Resultado da multiplicação de int e double: " + resultado);
+//
+//                long resultadoLong = valorInt + valorLong;
+//                System.out.println("Resultado da soma de int e long: " + resultadoLong);
 
-                // Operações com promoção automática
-                double resultado = valorInt * valorDouble;
-                System.out.println("Resultado da multiplicação de int e double: " + resultado);
 
-                long resultadoLong = valorInt + valorLong;
-                System.out.println("Resultado da soma de int e long: " + resultadoLong);
-            
+        // Atividade 2: Conversão de Tipos
+                double valorDouble = 123.456;
+                int valorConvertido = (int) valorDouble;
 
+                System.out.println("Valor original (double): " + valorDouble);
+                System.out.println("Valor convertido (int): " + valorConvertido);
+
+                long valorLong = 150L;
+                byte valorByte = (byte) valorLong;
+                System.out.println("Valor long: " + valorLong);
+                System.out.println("Valor convertido para byte: " + valorByte);
+                
     }
 }
